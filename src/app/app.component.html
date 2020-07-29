@@ -1,0 +1,10 @@
+<div>
+  <div class="container">
+    <mat-card>
+      <mat-card-title>{{survey.subject}}</mat-card-title>
+      <mat-card-content>
+        <app-survey-dynamic-form [questions]="questions$ | async" fxLayout="row"  class='md-padding'></app-survey-dynamic-form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
